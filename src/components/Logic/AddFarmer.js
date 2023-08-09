@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-
-import { Card, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import axios from 'axios';
 
 const AddFarmer = () => {
