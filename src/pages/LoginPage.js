@@ -10,6 +10,7 @@ import Iconify from '../components/iconify';
 // sections
 import { LoginForm } from '../sections/auth/login';
 
+import LoginBanner from '../assests/Tiny cartoon people working in garden together.jpg';
 // ----------------------------------------------------------------------
 
 const StyledRoot = styled('div')(({ theme }) => ({
@@ -20,7 +21,7 @@ const StyledRoot = styled('div')(({ theme }) => ({
 
 const StyledSection = styled('div')(({ theme }) => ({
   width: '100%',
-  maxWidth: 480,
+  maxWidth: '50%',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
@@ -63,10 +64,9 @@ export default function LoginPage() {
             <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
               Hi, Welcome Back
             </Typography>
-            <img src="/assets/illustrations/illustration_login.png" alt="login" />
+            <img src={LoginBanner} alt="login" />
           </StyledSection>
         )}
-
         <Container maxWidth="sm">
           <StyledContent>
             <Typography variant="h4" gutterBottom>
